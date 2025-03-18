@@ -1,0 +1,33 @@
+aws_region = "us-west-2"
+
+vpc_cidr = "192.168.0.0/16"
+
+vpc_name = "affiliate-vpc"
+
+subnet_details = {
+  "Product_private_subnet" = { 
+    cidr   = "192.168.2.0/24", 
+    public = false, 
+    az     = "us-west-2b" 
+  }
+  "Auth_private_subnet" = { 
+    cidr   = "192.168.3.0/24", 
+    public = false, 
+    az     = "us-west-2c" 
+  }
+  "Order_private_subnet" = { 
+    cidr   = "192.168.4.0/24", 
+    public = false, 
+    az     = "us-west-2a" 
+  }
+  "User_private_subnet" = { 
+    cidr   = "192.168.5.0/24", 
+    public = false, 
+    az     = "us-west-2b" 
+  }
+  "Public Subnet" = { 
+    cidr   = "192.168.6.0/24", 
+    public = true,  
+    az     = "us-west-2c" 
+  }
+}
